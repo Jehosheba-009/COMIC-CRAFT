@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ComicCraft</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🎨 ComicCraft</h1>
+
+        <p class="subtitle">
+            Turn your story idea into a comic
+        </p>
+
+        <!-- Story input -->
+        <div class="input-section">
+
+            <label for="prompt-input">
+                Enter your story idea
+            </label>
+
+            <textarea
+                id="prompt-input"
+                placeholder="Example: A cat finds a magical door in a forest..."
+                rows="4"
+            ></textarea>
+
+            <button id="generate-btn">
+                Generate Comic
+            </button>
+
+        </div>
+
+
+        <!-- Loading message -->
+        <div id="loading" style="display: none;">
+            <p>✨ Creating your comic...</p>
+        </div>
+
+
+        <!-- Result -->
+        <section id="result-section" style="display: none;">
+
+            <h2>Your Comic</h2>
+
+            <button id="download-pdf-btn">
+                📄 Download Comic as PDF
+            </button>
+
+            <div id="comic-output"></div>
+
+        </section>
+
+    </div>
+
+
+    <!-- PDF libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+    </script>
+
+
+    <!-- Your JavaScript -->
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

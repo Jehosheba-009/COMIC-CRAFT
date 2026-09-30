@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f5f7fb;
+
+    color: #222;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    text-align: center;
+
+}
+
+
+h1 {
+
+    font-size: 42px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.subtitle {
+
+    font-size: 18px;
+
+    color: #666;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* Input section */
+
+.input-section {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    margin-bottom: 30px;
+
+}
+
+
+.input-section label {
+
+    display: block;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+
+textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    resize: vertical;
+
+    margin-bottom: 15px;
+
+}
+
+
+button {
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 12px 22px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    background: #333;
+
+    color: white;
+
+}
+
+
+button:hover {
+
+    opacity: 0.85;
+
+}
+
+
+button:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+/* Loading */
+
+#loading {
+
+    font-size: 18px;
+
+    margin: 20px;
+
+}
+
+
+/* Result */
+
+#result-section {
+
+    margin-top: 30px;
+
+}
+
+
+#result-section h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+#download-pdf-btn {
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Comic panels */
+
+#comic-output {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+.comic-panel {
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.10);
+
+    text-align: left;
+
+}
+
+
+.comic-panel h3 {
+
+    text-align: center;
+
+    font-size: 24px;
+
+    margin-top: 0;
+
+}
+
+
+/* Comic image */
+
+.comic-image {
+
+    display: block;
+
+    width: 100%;
+
+    max-width: 650px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    margin: 15px auto;
+
+    border-radius: 10px;
+
+}
+
+
+/* Scene */
+
+.scene {
+
+    padding: 15px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+
+    margin-top: 15px;
+
+}
+
+
+.scene strong {
+
+    font-size: 17px;
+
+}
+
+
+.scene p {
+
+    margin-bottom: 0;
+
+    line-height: 1.6;
+
+}
+
+
+/* Dialogue */
+
+.dialogue {
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border-left: 5px solid #333;
+
+    background: #fafafa;
+
+    border-radius: 5px;
+
+}
+
+
+.dialogue strong {
+
+    font-size: 17px;
+
+}
+
+
+.dialogue p {
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    line-height: 1.5;
+
+}
+
+
+/* Error */
+
+.error {
+
+    background: #ffe5e5;
+
+    color: #b00020;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+
+        width: 95%;
+
+        margin: 20px auto;
+
+    }
+
+
+    h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .comic-image {
+
+        height: 250px;
+
+    }
+
+}
